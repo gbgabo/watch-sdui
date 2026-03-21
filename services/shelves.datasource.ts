@@ -9,7 +9,7 @@ type DataSource = "api" | "mock";
 const DATA_SOURCE: DataSource =
   process.env.NEXT_PUBLIC_DATA_SOURCE === "mock" ? "mock" : "api";
 
-export async function getShelves(page = 1): Promise<Shelf[]> {
+export async function getShelves(page = 1): Promise<Shelf[] | null> {
   if (DATA_SOURCE === "mock") {
     return validate(shelvesMock);
   }
@@ -23,9 +23,9 @@ export async function getShelves(page = 1): Promise<Shelf[]> {
 
     return validate(data);
   } catch (error) {
-    console.warn("Falling back to mock data", error);
+    console.warn(error);
 
-    return validate(shelvesMock);
+    return null;
   }
 }
 
