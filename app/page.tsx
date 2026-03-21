@@ -1,5 +1,5 @@
-import { getShelves } from "@/services/api.ts";
 import { ShelfRenderer } from "@/components/sdui/ShelfRenderer";
+import { getShelves } from "@/services/shelves.datasource";
 
 export default async function Home() {
   const shelves = await getShelves(1);

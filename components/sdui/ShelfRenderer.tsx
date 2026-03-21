@@ -1,4 +1,4 @@
-import { Shelf } from "@/types/shelf";
+import { Shelf } from "@/types/shelf.schema";
 import { CarouselShelf } from "../shelves/Carousel";
 import { BannerShelf } from "../shelves/Banner";
 import { ListShelf } from "../shelves/List";

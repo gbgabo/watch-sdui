@@ -1,4 +1,4 @@
-import { Shelf } from "@/types/shelf";
+import { Shelf } from "@/types/shelf.schema";
 import Image from "next/image";
 
 export function ListShelf({ shelf }: { shelf: Shelf }) {

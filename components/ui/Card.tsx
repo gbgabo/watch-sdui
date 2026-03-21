@@ -1,4 +1,4 @@
-import { ShelfItem } from "@/types/shelf";
+import { ShelfItem } from "@/types/shelf.schema";
 import Image from "next/image";
 
 export function Card({ item }: { item: ShelfItem }) {
