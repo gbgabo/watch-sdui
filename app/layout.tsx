@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Oswald } from "next/font/google";
 import "./globals.css";
+import { Navigation } from "@/components/Navigation";
 
 const oswald = Oswald({
   variable: "--font-oswald",
@@ -39,7 +40,10 @@ export default function RootLayout({
       lang="en"
       className={`${oswald.variable} ${helveticaNeue.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-white">
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
