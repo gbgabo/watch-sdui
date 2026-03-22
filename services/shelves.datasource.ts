@@ -17,7 +17,9 @@ export async function getShelves(page = 1): Promise<Shelf[] | null> {
   try {
     const res = await fetch(`${API_URL}/shelves?page=${page}`);
 
-    if (!res.ok) throw new Error("API error");
+    if (!res.ok) {
+      return [];
+    }
 
     const data = await res.json();
 
@@ -25,7 +27,7 @@ export async function getShelves(page = 1): Promise<Shelf[] | null> {
   } catch (error) {
     console.warn(error);
 
-    return null;
+    return [];
   }
 }
 
