@@ -4,7 +4,7 @@ import { AspectRatio } from "../ui/aspect-ratio";
 
 export function Collection({ item }: { item: ShelfItem }) {
   return (
-    <div className="min-w-160px w-[80vw] md:w-md">
+    <div className="min-w-160px w-full">
       <AspectRatio ratio={2.66 / 4} className="rounded-lg bg-muted-foreground">
         <Image
           src={item.image_url}

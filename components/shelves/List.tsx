@@ -8,7 +8,7 @@ export function ListShelf({ shelf }: { shelf: Shelf }) {
 
       <ul className="flex flex-col gap-3">
         {shelf.items.map((item) => (
-          <li key={item.id} className="mx-auto">
+          <li key={item.id} className="w-full">
             <Item item={item} />
           </li>
         ))}

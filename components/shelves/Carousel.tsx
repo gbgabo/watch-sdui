@@ -1,5 +1,5 @@
 import { Shelf } from "@/types/shelf.schema";
-import { Collection } from "@/components/items/Collection";
+import { Item } from "../sdui/Item";
 
 export function CarouselShelf({ shelf }: { shelf: Shelf }) {
   return (
@@ -8,10 +8,12 @@ export function CarouselShelf({ shelf }: { shelf: Shelf }) {
         {shelf.title}
       </h2>
 
-      <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory">
+      <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-px-4">
         {shelf.items.map((item) => (
           <div key={item.id} className="snap-start">
-            <Collection item={item} />
+            <div className="w-[80vw]">
+              <Item item={item} />
+            </div>
           </div>
         ))}
       </div>
