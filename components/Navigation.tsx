@@ -1,8 +1,15 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+
+const navLinks = [
+  { href: "/1", label: "Página 1" },
+  { href: "/2", label: "Página 2" },
+  { href: "/3", label: "Página 3" },
+  { href: "/demo", label: "Conteúdo baseado no Figma" },
+];
 
 export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,6 +34,24 @@ export function Navigation() {
             <Image src="/img/fnb.png" alt="fnb" width={100} height={25} />
           </Link>
         </div>
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-20 left-0 right-0 bg-background border-b border-border">
+            <ul className="flex flex-col py-6 px-6">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block py-3 text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </nav>
     </header>
   );

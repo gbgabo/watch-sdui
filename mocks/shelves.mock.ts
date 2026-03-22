@@ -39,7 +39,7 @@ export const shelvesMock: Shelf[] = [
         subtitle: "Six goals in a breathless Sunday afternoon",
         image_url:
           "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/500px-Premier_League_Logo.svg.png",
-        domain: "Collection",
+        domain: "Content",
       },
       {
         id: 104,
@@ -47,7 +47,7 @@ export const shelvesMock: Shelf[] = [
         subtitle: "90th-minute header keeps title race alive",
         image_url:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/500px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png",
-        domain: "Collection",
+        domain: "Content",
       },
       {
         id: 105,
@@ -55,7 +55,7 @@ export const shelvesMock: Shelf[] = [
         subtitle: "Dominant display puts Inter top of the table",
         image_url:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/500px-FC_Internazionale_Milano_2021.svg.png",
-        domain: "Collection",
+        domain: "Content",
       },
       {
         id: 106,
@@ -63,7 +63,7 @@ export const shelvesMock: Shelf[] = [
         subtitle: "Extra-time drama at the home of English football",
         image_url:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/London_Wembley.jpg/500px-London_Wembley.jpg",
-        domain: "Collection",
+        domain: "Content",
       },
     ],
   },

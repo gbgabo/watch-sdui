@@ -3,17 +3,11 @@ import { ShelvesSchema, Shelf } from "@/types/shelf.schema";
 
 const API_URL = "https://simple-test-api-s02c.onrender.com";
 
-type DataSource = "api" | "mock";
-
-// você pode trocar via env
-const DATA_SOURCE: DataSource =
-  process.env.NEXT_PUBLIC_DATA_SOURCE === "mock" ? "mock" : "api";
+export async function getDemo(): Promise<Shelf[]> {
+  return validate(shelvesMock);
+}
 
 export async function getShelves(page = 1): Promise<Shelf[] | null> {
-  if (DATA_SOURCE === "mock") {
-    return validate(shelvesMock);
-  }
-
   try {
     const res = await fetch(`${API_URL}/shelves?page=${page}`);
 

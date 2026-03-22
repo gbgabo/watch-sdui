@@ -2,12 +2,13 @@ import { ShelfItem } from "@/types/shelf.schema";
 import { Collection } from "../items/Collection";
 import { News } from "../items/News";
 import { Team } from "../items/Team";
+import { Content } from "../items/Content";
 
 export const itemComponentMap = {
   Collection: Collection,
   News: News,
   Team: Team,
-  Content: News,
+  Content: Content,
 } as const;
 
 interface Props {
