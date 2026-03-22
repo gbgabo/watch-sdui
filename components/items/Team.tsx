@@ -5,10 +5,10 @@ import { Ellipsis } from "lucide-react";
 
 export function Team({ item }: { item: ShelfItem }) {
   return (
-    <div className="min-w-320px flex flex-col items-center">
+    <div className="min-w-320px w-[70vw] flex flex-col items-center">
       <AspectRatio
         ratio={1}
-        className="rounded-full bg-muted-foreground sm:w-[70vw] md:w-auto min-w-3xl h-auto"
+        className="rounded-full bg-muted-foreground w-[70vw] h-auto"
       >
         <AspectRatio ratio={1} className="m-auto w-3/5">
           <Image
