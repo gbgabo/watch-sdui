@@ -7,6 +7,7 @@ export const itemComponentMap = {
   Collection: Collection,
   News: News,
   Team: Team,
+  Content: News,
 } as const;
 
 interface Props {
