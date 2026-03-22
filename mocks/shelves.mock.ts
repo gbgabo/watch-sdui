@@ -10,10 +10,9 @@ export const shelvesMock: Shelf[] = [
     items: [
       {
         id: 101,
-        title: "Real Madrid vs Manchester City",
+        title: "Curitiba Watchers X Northbridge Thunder",
         subtitle: "Champions League semi-final — live at the Bernabéu",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/500px-Real_Madrid_CF.svg.png",
+        image_url: "/img/mock/banner-image.png",
         domain: "Content",
       },
       {
@@ -29,7 +28,7 @@ export const shelvesMock: Shelf[] = [
   {
     id: 2,
     position: 1,
-    title: "Match Highlights",
+    title: "Best Highlights",
     subtitle: "Best goals and moments from the weekend",
     layout: "Carousel",
     items: [
@@ -37,32 +36,28 @@ export const shelvesMock: Shelf[] = [
         id: 103,
         title: "Premier League Round-up",
         subtitle: "Six goals in a breathless Sunday afternoon",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/500px-Premier_League_Logo.svg.png",
+        image_url: "/img/mock/content-1.png",
         domain: "Content",
       },
       {
         id: 104,
         title: "Bundesliga: Bayern's Late Winner",
         subtitle: "90th-minute header keeps title race alive",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/500px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png",
+        image_url: "/img/mock/content-2.png",
         domain: "Content",
       },
       {
         id: 105,
         title: "Serie A: Inter Milan Masterclass",
         subtitle: "Dominant display puts Inter top of the table",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/500px-FC_Internazionale_Milano_2021.svg.png",
+        image_url: "/img/mock/content-3.png",
         domain: "Content",
       },
       {
         id: 106,
         title: "FA Cup: Wembley Classic",
         subtitle: "Extra-time drama at the home of English football",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/London_Wembley.jpg/500px-London_Wembley.jpg",
+        image_url: "/img/mock/content-4.png",
         domain: "Content",
       },
     ],
@@ -70,63 +65,172 @@ export const shelvesMock: Shelf[] = [
   {
     id: 3,
     position: 2,
-    title: "Player Profiles",
+    title: "Super League Teams",
     subtitle: "The stars shaping the beautiful game",
-    layout: "List",
+    layout: "Carousel",
     items: [
       {
-        id: 107,
-        title: "Erling Haaland",
-        subtitle: "The machine that never stops scoring",
+        id: 206,
+        title: "Boston Celtics",
+        subtitle: "Championship window wide open",
         image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Erling_Haaland_June_2025.jpg/500px-Erling_Haaland_June_2025.jpg",
+          "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/500px-Boston_Celtics.svg.png",
+        domain: "Team",
+      },
+      {
+        id: 207,
+        title: "Los Angeles Lakers",
+        subtitle: "LeBron's last dance — or is it?",
+        image_url:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/500px-Los_Angeles_Lakers_logo.svg.png",
+        domain: "Team",
+      },
+      {
+        id: 208,
+        title: "Denver Nuggets",
+        subtitle: "Jokić and co. defending the throne",
+        image_url:
+          "https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Denver_Nuggets.svg/500px-Denver_Nuggets.svg.png",
+        domain: "Team",
+      },
+      {
+        id: 209,
+        title: "Golden State Warriors",
+        subtitle: "Can Curry lead one more title run?",
+        image_url:
+          "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/500px-Golden_State_Warriors_logo.svg.png",
+        domain: "Team",
+      },
+      {
+        id: 210,
+        title: "Milwaukee Bucks",
+        subtitle: "Giannis hungry for a second ring",
+        image_url:
+          "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/500px-Milwaukee_Bucks_logo.svg.png",
+        domain: "Team",
+      },
+      {
+        id: 211,
+        title: "Miami Heat",
+        subtitle: "The culture that refuses to die",
+        image_url:
+          "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/500px-Miami_Heat_logo.svg.png",
+        domain: "Team",
+      },
+    ],
+  },
+  {
+    id: 4,
+    position: 3,
+    title: "This is a news carousel",
+    subtitle: "The stars shaping the beautiful game",
+    layout: "Carousel",
+    items: [
+      {
+        id: 306,
+        title: "Boston Celtics",
+        subtitle: "Championship window wide open",
+        image_url: "/img/mock/news-1.png",
+        domain: "News",
+      },
+      {
+        id: 307,
+        title: "Los Angeles Lakers",
+        subtitle: "LeBron's last dance — or is it?",
+        image_url: "/img/mock/news-2.png",
+        domain: "News",
+      },
+      {
+        id: 308,
+        title: "Denver Nuggets",
+        subtitle: "Jokić and co. defending the throne",
+        image_url: "/img/mock/news-3.png",
+        domain: "News",
+      },
+      {
+        id: 309,
+        title: "Golden State Warriors",
+        subtitle: "Can Curry lead one more title run?",
+        image_url: "/img/mock/news-4.png",
+        domain: "News",
+      },
+      {
+        id: 310,
+        title: "Milwaukee Bucks",
+        subtitle: "Giannis hungry for a second ring",
+        image_url: "/img/mock/news-5.png",
+        domain: "News",
+      },
+      {
+        id: 311,
+        title: "Miami Heat",
+        subtitle: "The culture that refuses to die",
+        image_url: "/img/mock/news-6.png",
+        domain: "News",
+      },
+    ],
+  },
+  {
+    id: 5,
+    position: 4,
+    title: "All programs",
+    subtitle: "The stars shaping the beautiful game",
+    layout: "Carousel",
+    items: [
+      {
+        id: 406,
+        title: "Boston Celtics",
+        subtitle: "Championship window wide open",
+        image_url: "/img/mock/collection-1.png",
         domain: "Collection",
       },
       {
-        id: 108,
-        title: "Vinicius Jr.",
-        subtitle: "Dribbling his way to the Ballon d'Or",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg/500px-2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg",
+        id: 407,
+        title: "Los Angeles Lakers",
+        subtitle: "LeBron's last dance — or is it?",
+        image_url: "/img/mock/collection-2.png",
         domain: "Collection",
       },
       {
-        id: 109,
-        title: "Pedri",
-        subtitle: "Barcelona's midfield maestro at 22",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pedri.jpg/500px-Pedri.jpg",
+        id: 408,
+        title: "Denver Nuggets",
+        subtitle: "Jokić and co. defending the throne",
+        image_url: "/img/mock/collection-3.png",
         domain: "Collection",
       },
       {
-        id: 110,
-        title: "Rodri",
-        subtitle: "The anchor every great team needs",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/RODRI_-_SWE_vs_ESP_-_UEFA_EURO_2020_QUALIFIERS_-_2019.10.15_%28cropped%29.jpg/500px-RODRI_-_SWE_vs_ESP_-_UEFA_EURO_2020_QUALIFIERS_-_2019.10.15_%28cropped%29.jpg",
+        id: 409,
+        title: "Golden State Warriors",
+        subtitle: "Can Curry lead one more title run?",
+        image_url: "/img/mock/collection-4.png",
         domain: "Collection",
       },
       {
-        id: 111,
-        title: "Kylian Mbappé",
-        subtitle: "Chasing history at the Bernabéu",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg/500px-Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg",
+        id: 410,
+        title: "Milwaukee Bucks",
+        subtitle: "Giannis hungry for a second ring",
+        image_url: "/img/mock/collection-5.png",
         domain: "Collection",
       },
       {
-        id: 112,
-        title: "Lautaro Martínez",
-        subtitle: "Serie A's deadliest finisher",
-        image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lautaro_Martinez_ARGENTINA_VS_VENEZUELA_2017.jpg/500px-Lautaro_Martinez_ARGENTINA_VS_VENEZUELA_2017.jpg",
+        id: 411,
+        title: "Miami Heat",
+        subtitle: "The culture that refuses to die",
+        image_url: "/img/mock/collection-6.png",
+        domain: "Collection",
+      },
+      {
+        id: 412,
+        title: "Miami Heat",
+        subtitle: "The culture that refuses to die",
+        image_url: "/img/mock/collection-7.png",
         domain: "Collection",
       },
     ],
   },
   {
     id: 10,
-    position: 3,
+    position: 5,
     title: "Coming Soon",
     subtitle: "More football content on the way",
     layout: "Carousel",

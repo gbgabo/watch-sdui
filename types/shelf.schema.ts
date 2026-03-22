@@ -4,7 +4,30 @@ export const ShelfItemSchema = z.object({
   id: z.number(),
   title: z.string(),
   subtitle: z.string(),
-  image_url: z.url(),
+  image_url: z.string().refine(
+    (value) => {
+      // Check if the URL is relative (doesn't start with a protocol)
+      if (!/^(https?:\/\/|mailto:)/i.test(value)) {
+        // Try to create a URL using a dummy base. If it succeeds, it's valid.
+        try {
+          new URL(value, "https://dummybase.com");
+          return true;
+        } catch {
+          return false;
+        }
+      }
+      // Optionally, if you also want to allow absolute URLs:
+      try {
+        new URL(value);
+        return true;
+      } catch {
+        return false;
+      }
+    },
+    {
+      message: "Invalid relative or absolute URL",
+    },
+  ),
   domain: z.enum(["Content", "Team", "News", "Collection"]),
 });
 
