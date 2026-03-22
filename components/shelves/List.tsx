@@ -7,7 +7,7 @@ export function ListShelf({ shelf }: { shelf: Shelf }) {
     <section className="px-4">
       <Heading title={shelf.title} />
 
-      <ul className="flex flex-col gap-3">
+      <ul className="flex flex-col gap-8">
         {shelf.items.map((item) => (
           <li key={item.id} className="w-full">
             <Item item={item} />
