@@ -10,7 +10,7 @@ export default async function Page() {
   }
 
   return (
-    <main className="py-4 max-w-4xl m-auto">
+    <main className="max-w-4xl m-auto">
       <ShelfRenderer shelves={shelves} />
     </main>
   );

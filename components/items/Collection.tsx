@@ -1,6 +1,7 @@
 import { ShelfItem } from "@/types/shelf.schema";
 import Image from "next/image";
 import { AspectRatio } from "../ui/aspect-ratio";
+import { Ellipsis } from "lucide-react";
 
 export function Collection({ item }: { item: ShelfItem }) {
   return (
@@ -14,7 +15,10 @@ export function Collection({ item }: { item: ShelfItem }) {
         />
       </AspectRatio>
 
-      <h3 className="font-bold mt-2">{item.title}</h3>
+      <div className="flex justify-between mt-3 content-between">
+        <h3 className="font-bold text-lg">{item.title}</h3>
+        <Ellipsis />
+      </div>
     </div>
   );
 }

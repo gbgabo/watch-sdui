@@ -48,7 +48,7 @@ export function BannerShelf({ shelf }: { shelf: Shelf }) {
                   height={500}
                 />
                 <div className="absolute bottom-4 left-0 text-white z-10 w-full flex flex-col items-center gap-7 mb-4">
-                  <h2 className="text-4xl text-center font-heading font-semibold uppercase tracking-normal">
+                  <h2 className="text-4xl text-center font-heading font-semibold uppercase tracking-normal px-4">
                     {item.title}
                   </h2>
                   <Button className="bg-blue-700 px-10 py-8 text-xl rounded-sm">
