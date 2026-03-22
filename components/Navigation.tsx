@@ -5,10 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { href: "/1", label: "Página 1" },
-  { href: "/2", label: "Página 2" },
-  { href: "/3", label: "Página 3" },
-  { href: "/demo", label: "Conteúdo baseado no Figma" },
+  { href: "/1", label: "Page 1" },
+  { href: "/2", label: "Page 2" },
+  { href: "/3", label: "Page 3" },
+  { href: "/demo", label: "Content based on Figma" },
 ];
 
 export function Navigation() {
@@ -31,12 +31,12 @@ export function Navigation() {
             href="/"
             className="font-serif text-xl tracking-wide text-foreground hover:text-accent transition-colors justify-self-center"
           >
-            <Image src="/img/fnb.png" alt="fnb" width={100} height={25} />
+            <Image src="/img/fnb.png" alt="fnb" width={100} height={35} />
           </Link>
         </div>
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 bg-background border-b border-border">
+          <div className="absolute top-20 left-0 right-0 bg-background">
             <ul className="flex flex-col py-6 px-6">
               {navLinks.map((link) => (
                 <li key={link.href}>
