@@ -3,10 +3,10 @@ import { Item } from "../sdui/Item";
 import { Heading } from "../Heading";
 
 const itemsSizing = {
-  Team: "w-[40vw]",
-  Collection: "w-[80vw]",
-  News: "w-[90vw]",
-  Content: "w-[80vw]",
+  Team: "w-[40vw] md:w-40",
+  Collection: "w-[80vw] md:w-40",
+  News: "w-[90vw] md:w-80",
+  Content: "w-[80vw] md:w-50",
 };
 
 export function CarouselShelf({ shelf }: { shelf: Shelf }) {
