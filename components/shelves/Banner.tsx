@@ -46,7 +46,7 @@ export function BannerShelf({ shelf }: { shelf: Shelf }) {
                   className="h-full object-cover"
                   width={500}
                   height={500}
-                  priority={index == 0}
+                  preload={index == 0}
                 />
                 <div className="absolute bottom-4 left-0 text-white z-10 w-full flex flex-col items-center gap-7 mb-4">
                   <h2 className="text-4xl text-center font-heading font-semibold uppercase tracking-normal px-4">
